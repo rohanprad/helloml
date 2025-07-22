@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Exam Performance Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #f9fafc, #e4e9f1);
+            padding-top: 60px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .btn-start {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        .features-section {
+            margin-top: 60px;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature h4 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container hero-section">
+        <h1>Welcome to the Student Exam Performance Predictor</h1>
+        <p>Predict your math score based on your demographic and academic attributes. 
+           This tool helps students and educators understand how various factors influence exam results.</p>
+        <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary btn-start">Start Prediction</a>
+    </div>
+
+    <div class="container features-section">
+        <div class="row">
+            <div class="col-md-4 feature">
+                <h4>🎯 Accurate Predictions</h4>
+                <p>Powered by machine learning models trained on real student data for high reliability.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <h4>⚡ Fast and Simple</h4>
+                <p>Fill in a quick form and get instant results — no login or sign-up required.</p>
+            </div>
+            <div class="col-md-4 feature">
+                <h4>📊 Data-Driven Insights</h4>
+                <p>Use this tool to understand performance patterns and guide study strategies.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Student Exam Performance Predictor | Built with Flask, Bootstrap & ❤️
+    </footer>
+
+</body>
+</html>
